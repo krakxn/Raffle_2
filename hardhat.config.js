@@ -43,7 +43,7 @@ module.exports = {
             //   },
             saveDeployments: true,
             chainId: 5,
-            etherscan: ETHERSCAN_API_KEY,
+            // etherscan: ETHERSCAN_API_KEY,
         },
         mainnet: {
             url: MAINNET_RPC_URL,
@@ -56,7 +56,7 @@ module.exports = {
         },
     },
     etherscan: {
-        apiKey: process.env.ETHERSCAN_API_KEY,
+        apiKey: ETHERSCAN_API_KEY,
     },
 
     gasReporter: {
@@ -90,6 +90,6 @@ module.exports = {
         ],
     },
     mocha: {
-        timeout: 1000000, // 500 seconds max for running tests
+        timeout: 500000, // 500 seconds max for running tests
     },
 }
